@@ -1,3 +1,14 @@
+@font-face {
+    font-family: brushStrike;
+    src: url(Brushstrike.ttf);
+}
+.title{
+    font-family: brushStrike;
+    font-size:120px;
+    color:red;
+    text-align: center;
+    text-shadow: 4px 4px black;
+}
 body{
     width:100%;
     
@@ -13,9 +24,9 @@ body{
 .menu{
     border: 2px solid black;
     background-color: aquamarine;
-    width:30%;
-    margin-left: 370px;
-    margin-top: 130px;
+    width: 40%;
+    margin-left: 317px;
+    margin-top: 15px;
     text-align: center;
 }
 .button{
@@ -34,7 +45,7 @@ body{
     width: 49%;
     height: 262px;
     display: inline-block;
-    margin-top: 75px;
+    margin-top: 50px;
     margin-left: 0px;
     vertical-align: top;
     text-align: center;
@@ -45,11 +56,16 @@ body{
     width: 49%;
     height: 262px;
     display: inline-block;
-    margin-top: 75px;
+    margin-top: 50px;
     margin-left: 0px;
     vertical-align: top;
     text-align: center;
 }
 h2{
     display:inline-block;
+    margin:0px;
+}
+option:first-child{
+    color:red;
+    font-weight: bold;
 }

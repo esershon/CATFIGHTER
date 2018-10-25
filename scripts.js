@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("select, .vs").hide();
+    $("select, .vs, button.fight").hide();
     $("img.cat").hide();
     $("button.background").mouseover(function () {
         if ($(this).hasClass("box")) {
@@ -28,16 +28,23 @@ $(document).ready(function () {
 
     $("button.background").click(function () {
         $("button.background").unbind("mouseout", handler);
-        $("button.background").hide();
-        $("select, .vs").show();
-        $("h1").html("Select Cats")
+        $(".backgroundselect").hide();
+        $("select, .vs, button.fight").show();
+        $("h1.select").html("Select Cats")
         console.log("CHOOSE YOUR CAT!");
     })
     $("select.player1").change(function () {
         var player1 = $(this).val();
-        $(".player1catbox").html("<img class='cat' src='img/" + player1 + "' alt='cat gif'>")
-        // $(".cat").css("text-align", "center")
-        console.log(player1);
+        console.log
+        if (player1 == "empty") {
+            $(".player1catbox").html("")
+            console.log("player1=empty")
+        }
+        else {
+            $(".player1catbox").html("<img class='cat' src='img/" + player1 + "' alt='cat gif'>")
+            // $(".cat").css("text-align", "center")
+            console.log(player1);
+        }
     })
     $("select.player2").change(function () {
         var player2 = $(this).val();
